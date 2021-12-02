@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EE6FB056274F1A1300ACC6E8 /* PSTUianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB055274F1A1300ACC6E8 /* PSTUianApp.swift */; };
-		EE6FB058274F1A1300ACC6E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB057274F1A1300ACC6E8 /* ContentView.swift */; };
+		EE6FB058274F1A1300ACC6E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB057274F1A1300ACC6E8 /* HomeView.swift */; };
 		EE6FB05A274F1A1400ACC6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6FB059274F1A1400ACC6E8 /* Assets.xcassets */; };
 		EE6FB05D274F1A1400ACC6E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6FB05C274F1A1400ACC6E8 /* Preview Assets.xcassets */; };
 		EE6FB067274F1A1400ACC6E8 /* PSTUianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB066274F1A1400ACC6E8 /* PSTUianTests.swift */; };
 		EE6FB071274F1A1400ACC6E8 /* PSTUianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB070274F1A1400ACC6E8 /* PSTUianUITests.swift */; };
 		EE6FB073274F1A1400ACC6E8 /* PSTUianUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB072274F1A1400ACC6E8 /* PSTUianUITestsLaunchTests.swift */; };
+		EE6FB0C12758E83800ACC6E8 /* SliderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB0C02758E83800ACC6E8 /* SliderModel.swift */; };
+		EE6FB0C32758E87D00ACC6E8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB0C22758E87D00ACC6E8 /* Constant.swift */; };
+		EE6FB0C62758E95400ACC6E8 /* ImageSliderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB0C52758E95400ACC6E8 /* ImageSliderItemView.swift */; };
+		EE6FB0C82758EA0500ACC6E8 /* ImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB0C72758EA0500ACC6E8 /* ImageSliderView.swift */; };
+		EE6FB0CB2758F50800ACC6E8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB0CA2758F50800ACC6E8 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		EE6FB052274F1A1200ACC6E8 /* PSTUian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSTUian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6FB055274F1A1300ACC6E8 /* PSTUianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTUianApp.swift; sourceTree = "<group>"; };
-		EE6FB057274F1A1300ACC6E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE6FB057274F1A1300ACC6E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EE6FB059274F1A1400ACC6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE6FB05C274F1A1400ACC6E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE6FB062274F1A1400ACC6E8 /* PSTUianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSTUianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		EE6FB06C274F1A1400ACC6E8 /* PSTUianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSTUianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6FB070274F1A1400ACC6E8 /* PSTUianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTUianUITests.swift; sourceTree = "<group>"; };
 		EE6FB072274F1A1400ACC6E8 /* PSTUianUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTUianUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE6FB0C02758E83800ACC6E8 /* SliderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderModel.swift; sourceTree = "<group>"; };
+		EE6FB0C22758E87D00ACC6E8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EE6FB0C52758E95400ACC6E8 /* ImageSliderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderItemView.swift; sourceTree = "<group>"; };
+		EE6FB0C72758EA0500ACC6E8 /* ImageSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderView.swift; sourceTree = "<group>"; };
+		EE6FB0CA2758F50800ACC6E8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,12 @@
 		EE6FB054274F1A1200ACC6E8 /* PSTUian */ = {
 			isa = PBXGroup;
 			children = (
+				EE6FB0C92758F4FA00ACC6E8 /* Extension */,
+				EE6FB0BF2758E81600ACC6E8 /* Model */,
+				EE6FB0BE2758E7E300ACC6E8 /* Utility */,
+				EE6FB0BD2758E79300ACC6E8 /* Home */,
 				EE6FB055274F1A1300ACC6E8 /* PSTUianApp.swift */,
-				EE6FB057274F1A1300ACC6E8 /* ContentView.swift */,
+				EE6FB057274F1A1300ACC6E8 /* HomeView.swift */,
 				EE6FB059274F1A1400ACC6E8 /* Assets.xcassets */,
 				EE6FB05B274F1A1400ACC6E8 /* Preview Content */,
 			);
@@ -125,6 +139,47 @@
 				EE6FB072274F1A1400ACC6E8 /* PSTUianUITestsLaunchTests.swift */,
 			);
 			path = PSTUianUITests;
+			sourceTree = "<group>";
+		};
+		EE6FB0BD2758E79300ACC6E8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE6FB0BE2758E7E300ACC6E8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EE6FB0C42758E93D00ACC6E8 /* imageslider */,
+				EE6FB0C22758E87D00ACC6E8 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EE6FB0BF2758E81600ACC6E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE6FB0C02758E83800ACC6E8 /* SliderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE6FB0C42758E93D00ACC6E8 /* imageslider */ = {
+			isa = PBXGroup;
+			children = (
+				EE6FB0C52758E95400ACC6E8 /* ImageSliderItemView.swift */,
+				EE6FB0C72758EA0500ACC6E8 /* ImageSliderView.swift */,
+			);
+			path = imageslider;
+			sourceTree = "<group>";
+		};
+		EE6FB0C92758F4FA00ACC6E8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE6FB0CA2758F50800ACC6E8 /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE6FB058274F1A1300ACC6E8 /* ContentView.swift in Sources */,
+				EE6FB0C82758EA0500ACC6E8 /* ImageSliderView.swift in Sources */,
+				EE6FB0C62758E95400ACC6E8 /* ImageSliderItemView.swift in Sources */,
+				EE6FB0CB2758F50800ACC6E8 /* Color.swift in Sources */,
+				EE6FB0C12758E83800ACC6E8 /* SliderModel.swift in Sources */,
+				EE6FB058274F1A1300ACC6E8 /* HomeView.swift in Sources */,
 				EE6FB056274F1A1300ACC6E8 /* PSTUianApp.swift in Sources */,
+				EE6FB0C32758E87D00ACC6E8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ImageSliderView: View {
     
-    let sliders: [Slider]
+    let sliders: [SliderEntity]
     
     var body: some View {
         TabView {
@@ -27,7 +27,7 @@ struct ImageSliderView: View {
 
 struct ImageSliderView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageSliderView(sliders: dummySliders)
+        ImageSliderView(sliders: SliderViewModel.successState().sliders)
             .background(Color.gray)
     }
 }

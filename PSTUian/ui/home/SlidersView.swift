@@ -10,7 +10,7 @@ import SwiftUI
 struct SlidersView: View {
     
     var proxy: GeometryProxy
-    @StateObject var sliderVM = SliderViewModel()
+    @StateObject var sliderVM = SliderVM()
     
     var body: some View {
         if sliderVM.isLoading {
@@ -19,11 +19,11 @@ struct SlidersView: View {
         } else if sliderVM.errorMessage != nil {
             ErrorView(errorMessage: sliderVM.errorMessage!)
                 .frame(width: proxy.size.width, height: 260)
-        } else if sliderVM.sliders.isEmpty {
+        } else if sliderVM.data.isEmpty {
             ErrorView(errorMessage: "No Data")
                 .frame(width: proxy.size.width, height: 260)
         } else {
-            ImageSliderView(sliders: sliderVM.sliders)
+            ImageSliderView(sliders: sliderVM.data)
                 .frame(height: 260)
         }
     }

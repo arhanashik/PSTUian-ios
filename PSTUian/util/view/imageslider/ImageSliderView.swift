@@ -27,7 +27,7 @@ struct ImageSliderView: View {
 
 struct ImageSliderView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageSliderView(sliders: SliderViewModel.successState().sliders)
+        ImageSliderView(sliders: SliderVM.successState().data)
             .background(Color.gray)
     }
 }

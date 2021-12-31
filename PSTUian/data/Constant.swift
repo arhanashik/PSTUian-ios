@@ -16,11 +16,22 @@ let LOCAL_API_SERVER = "http://192.168.1.105:8888/PSTUian-web/api/mobile/v1"
 let DEV_API_SERVER = "https://api-dev.pstuian.com/mobile/v1"
 let BASE_API_URL = DEV_API_SERVER
 
-let SLIDER_API_URL = "\(BASE_API_URL)/slider.php?call=getAll"
-
+let SLIDER_API_PATH = "\(BASE_API_URL)/slider.php?call="
 let FACULTY_API_PATH = "\(BASE_API_URL)/faculty.php?call="
+let BATCH_API_PATH = "\(BASE_API_URL)/batch.php?call="
 class Api {
+    class Slider {
+        static let GetAll = "\(SLIDER_API_PATH)getAll"
+    }
     class Faculty {
         static let GetAll = "\(FACULTY_API_PATH)getAll"
     }
+    class Batch {
+        static let GetAll = "\(BATCH_API_PATH)getAll"
+    }
+}
+
+class UserType {
+    static let STUDENT = "student"
+    static let TEACHER = "teacher"
 }

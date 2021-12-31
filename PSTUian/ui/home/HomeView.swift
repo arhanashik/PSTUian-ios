@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var sliderVM = SliderViewModel()
     
     var body: some View {
         GeometryReader { geometry in

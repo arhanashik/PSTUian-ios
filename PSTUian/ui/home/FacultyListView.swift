@@ -10,7 +10,7 @@ import SwiftUI
 struct FacultyListView: View {
     
     var proxy: GeometryProxy
-    @StateObject var facultyVM = FacultyViewModel()
+    @StateObject var facultyVM = FacultyVM()
     
     var columns: [GridItem] = [
             GridItem(.flexible()),
@@ -24,12 +24,12 @@ struct FacultyListView: View {
         } else if facultyVM.errorMessage != nil {
             ErrorView(errorMessage: facultyVM.errorMessage!)
                 .frame(width: proxy.size.width, height: 100)
-        } else if facultyVM.faculties.isEmpty {
+        } else if facultyVM.data.isEmpty {
             ErrorView(errorMessage: "No Data")
                 .frame(width: proxy.size.width, height: 100)
         } else {
             LazyVGrid(columns: columns, spacing: 15) {
-                ForEach(facultyVM.faculties) { faculty in
+                ForEach(facultyVM.data) { faculty in
                     NavigationLink(destination: FacultyView(faculty: faculty)) {
                         FacultyCard(proxy: proxy, faculty: faculty)
                     }

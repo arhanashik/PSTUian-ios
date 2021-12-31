@@ -1,6 +1,6 @@
 //
-//  PSTUianTests.swift
-//  PSTUianTests
+//  SliderTests.swift
+//  SliderTests
 //
 //  Created by Arhan Ashik on 2021/11/25.
 //
@@ -9,7 +9,7 @@ import XCTest
 import Combine
 @testable import PSTUian
 
-class PSTUianTests: XCTestCase {
+class SliderTests: XCTestCase {
     
     var subscriptions = Set<AnyCancellable>()
 
@@ -21,39 +21,54 @@ class PSTUianTests: XCTestCase {
         subscriptions = []
     }
     
+    //----------- SLIDER TESTS -------------//
     func test_getting_slider_success() {
+        // dummy response
         let result = Result<[SliderEntity], ApiError>.success([SliderEntity.example1()])
-        let sliderVM = SliderViewModel(sliderService: SliderApiMockService(result: result))
-        
+        // test subject
+        let vm = prepareVM(result: result)
+
+        // test
         let promise = expectation(description: "getting sliders")
-        
-        sliderVM.$sliders.sink { sliders in
-            if(sliders.count > 0) {
+        vm.$data.sink { data in
+            if(data.count > 0) {
                 promise.fulfill()
             }
         }.store(in: &subscriptions)
-        
+
         wait(for: [promise], timeout: 2)
     }
-    
+
     func test_getting_slider_error() {
+        // dummy response
         let result = Result<[SliderEntity], ApiError>.failure(ApiError.badURL)
-        let sliderVM = SliderViewModel(sliderService: SliderApiMockService(result: result))
-        
+        // test subject
+        let vm = prepareVM(result: result)
+
+        // test
         let promise = expectation(description: "show error message")
-        sliderVM.$sliders.sink { sliders in
-            if !sliders.isEmpty {
+        vm.$data.sink { data in
+            if !data.isEmpty {
                 XCTFail()
             }
         }.store(in: &subscriptions)
-        
-        sliderVM.$errorMessage.sink { errorMessage in
+
+        // test
+        vm.$errorMessage.sink { errorMessage in
             if errorMessage != nil {
                 promise.fulfill()
             }
         }.store(in: &subscriptions)
-        
+
         wait(for: [promise], timeout: 2)
     }
-
+    
+    func prepareVM(result: Result<[SliderEntity], ApiError>) -> SliderVM {
+        // moc service
+        let service = ApiMockService(type: [SliderEntity].self, result: result)
+        // dummy repo
+        let repo = SliderRepo(service: service)
+        
+        return SliderVM(repo: repo)
+    }
 }

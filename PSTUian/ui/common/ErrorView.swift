@@ -17,6 +17,6 @@ struct ErrorView: View {
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorView(errorMessage: SliderViewModel.errorState().errorMessage ?? "")
+        ErrorView(errorMessage: SliderVM.errorState().errorMessage ?? "")
     }
 }

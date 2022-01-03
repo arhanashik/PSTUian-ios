@@ -11,14 +11,15 @@ enum ApiError: Error, CustomStringConvertible {
     case badURL
     case badResponse(statusCode: Int)
     case url(URLError?)
-    case parsing(DecodingError?)
+    case encoding(EncodingError?)
+    case decoding(DecodingError?)
     case server(error: String?)
     case unknown
     
     // for user
     var localizedDescription: String {
         switch self {
-        case .badURL, .parsing, .unknown:
+        case .badURL, .encoding, .decoding, .unknown:
             return "Sorry, something went wrong."
         case .badResponse(_):
             return "Sorry, could not connect to the server."
@@ -38,8 +39,10 @@ enum ApiError: Error, CustomStringConvertible {
             return "bad response with status code \(statusCode)"
         case .url(let error):
             return error?.localizedDescription ?? "url session error"
-        case .parsing(let error):
-            return "parsing error \(error?.localizedDescription ?? "")"
+        case .encoding(let error):
+            return "decoding error \(error?.localizedDescription ?? "")"
+        case .decoding(let error):
+            return "decoding error \(error?.localizedDescription ?? "")"
         case .server(let error):
             return error ?? "server error"
         case .unknown:

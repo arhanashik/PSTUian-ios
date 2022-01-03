@@ -18,10 +18,10 @@ class BaseVM<Entity: Codable>: ObservableObject {
         self.repo = repo
     }
     
-    func fetchAll(url: String) {
+    func getAll(url: String, page: Int = 1) {
         isLoading = true
         
-        repo.fetchAll(url: url) { result in
+        repo.getAll(url: url, page: page) { result in
             DispatchQueue.main.async {
                 self.isLoading = false
                 switch result {

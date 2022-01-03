@@ -31,7 +31,7 @@ struct SliderApiService: SliderApiServiceProtocol {
                         completion(Result.failure(ApiError.server(error: result.message)))
                     }
                 } catch {
-                    completion(Result.failure(ApiError.parsing(error as? DecodingError)))
+                    completion(Result.failure(ApiError.decoding(error as? DecodingError)))
                 }
             }
         }

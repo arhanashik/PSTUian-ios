@@ -11,7 +11,7 @@ class SliderVM: BaseVM<SliderEntity> {
     
     convenience init(repo: SliderRepo = SliderRepo()) {
         self.init(repo)
-        fetchAll(url: Api.Slider.GetAll)
+        getAll(url: Api.Slider.GetAll)
     }
     
     //MARK: preview helpers

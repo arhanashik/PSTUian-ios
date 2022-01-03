@@ -11,7 +11,7 @@ struct EmailVerificationView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @State var userType: String = "student"
+    @State var userType: UserType = UserType.student
     @State var email: String = ""
     
     var body: some View {

@@ -11,6 +11,6 @@ class BatchVM: BaseVM<BatchEntity> {
     
     convenience init(repo: BatchRepo = BatchRepo()) {
         self.init(repo)
-        fetchAll(url: Api.Batch.GetAll)
+        getAll(url: Api.Batch.GetAll)
     }
 }

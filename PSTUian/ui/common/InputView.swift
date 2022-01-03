@@ -9,12 +9,12 @@ import SwiftUI
 
 struct UserTypeSelector: View {
     
-    @Binding var userType: String
+    @Binding var userType: UserType
     
     var body: some View {
         Picker(selection: $userType, label: Text("I am")) {
-            Text("Student").tag(UserType.STUDENT)
-            Text("Teacher").tag(UserType.TEACHER)
+            Text("Student").tag(UserType.student)
+            Text("Teacher").tag(UserType.teacher)
         }
         .pickerStyle(.segmented)
         .padding(.bottom, 10.0)
@@ -27,6 +27,7 @@ struct EmailInput: View {
     
     var body: some View {
         TextField("Email", text: $email)
+            .keyboardType(.emailAddress)
             .padding()
             .background(lightGray)
             .cornerRadius(24.0)

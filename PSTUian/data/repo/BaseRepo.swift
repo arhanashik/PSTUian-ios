@@ -14,9 +14,10 @@ class BaseRepo<Entity: Codable> {
         self.service = service
     }
     
-    func fetchAll(url: String, completion: @escaping(Result<[Entity], RepoError>) -> Void) {
+    func getAll(url: String, page: Int, completion: @escaping(Result<[Entity], RepoError>) -> Void) {
         let url = URL(string: url)
-        service.fetch([Entity].self, url: url) { result in
+        let paging = Paging(page: page, limit: 20)
+        service.get([Entity].self, url: url, param: paging) { result in
             switch result {
                 case .failure(let error):
                 completion(Result.failure(RepoError.apiError(error: error)))
@@ -25,5 +26,17 @@ class BaseRepo<Entity: Codable> {
                     completion(Result.success(data))
             }
         }
+    }
+    
+    func getKeyChain<T: Codable>(_ service: String, account: String = Key.KeyChain.Account.PSTUIAN, type: T.Type) -> T? {
+        return KeychainHelper.standard.read(service: service, account: account, type: type)
+    }
+    
+    func saveKeyChain<T: Codable>(_ item: T, service: String, account: String = Key.KeyChain.Account.PSTUIAN) -> Bool {
+        return KeychainHelper.standard.save(item, service: service, account: account)
+    }
+    
+    func deleteKeyChain(service: String, account: String = Key.KeyChain.Account.PSTUIAN) -> Bool {
+        return KeychainHelper.standard.delete(service: service, account: account)
     }
 }

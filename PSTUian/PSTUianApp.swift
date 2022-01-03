@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct PSTUianApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashView()
         }
     }
 }

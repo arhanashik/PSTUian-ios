@@ -9,5 +9,7 @@ import SwiftUI
 
 
 protocol ApiServiceProtocol {
-    func fetch<T: Codable>(_ type: T.Type, url: URL?, completion: @escaping(Result<T, ApiError>) -> Void)
+    func get<Param: Codable, T: Codable>(_ type: T.Type, url: URL?, param: Param?, completion: @escaping(Result<T, ApiError>) -> Void)
+    func post<Param: Codable, T: Codable>(_ type: T.Type, url: URL?, param: Param, completion: @escaping(Result<T, ApiError>) -> Void)
+    func auth<Param: Codable, T: Codable>(_ type: T.Type, url: URL?, param: Param?, completion: @escaping(Result<AuthResponse<T>, ApiError>) -> Void)
 }

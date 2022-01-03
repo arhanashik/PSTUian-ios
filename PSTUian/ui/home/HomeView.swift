@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @StateObject var authVM: AuthVM = AuthVM()
+    
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
@@ -32,22 +34,56 @@ struct HomeView: View {
                     .navigationTitle("PSTUian")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarItems(
-                        leading: SignInButton(),
+                        leading: VStack {
+                            if authVM.signInStudent != nil {
+                                ProfileButton(imageUrl: authVM.signInStudent?.imageUrl)
+                            } else if authVM.signInTeacher != nil {
+                                ProfileButton(imageUrl: authVM.signInTeacher?.imageUrl)
+                            } else {
+                                SignInButton()
+                            }
+                        },
                         trailing: NotificationButton()
                     )
                 }) //: SCROLL
             } //: NAVIGATION
+            .environmentObject(authVM)
         } //: GEOMETRY
     }
 }
 
 struct ProfileButton: View {
+    
+    let imageUrl: String?
     var body: some View {
-        NavigationLink(destination: SignInView(), label: {
-            Image("img_placeholder_profile")
-                .resizable()
-                .frame(width: 28, height: 28)
-                .cornerRadius(14)
+        NavigationLink(destination: ProfileView(), label: {
+            if imageUrl == nil || imageUrl!.isEmpty {
+                Image("img_placeholder_profile")
+                    .resizable()
+                    .frame(width: 28, height: 28)
+                    .cornerRadius(14)
+            } else {
+                AsyncImage(url: URL(string: imageUrl!)) { phase in
+                    if let image = phase.image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 28, height: 28)
+                            .cornerRadius(14)
+                    } else if phase.error != nil {
+                        Image("img_placeholder_profile")
+                            .resizable()
+                            .frame(width: 28, height: 28)
+                            .cornerRadius(14)
+                    } else {
+                        ProgressView()
+                            .frame(width: 28, height: 28)
+                            .foregroundColor(.white)
+                            .background(.gray)
+                            .cornerRadius(14)
+                    }
+                }
+            }
         })
     }
 }

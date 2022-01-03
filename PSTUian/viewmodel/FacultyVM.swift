@@ -11,6 +11,6 @@ class FacultyVM: BaseVM<FacultyEntity> {
     
     convenience init(repo: FacultyRepo = FacultyRepo()) {
         self.init(repo)
-        fetchAll(url: Api.Faculty.GetAll)
+        getAll(url: Api.Faculty.GetAll)
     }
 }

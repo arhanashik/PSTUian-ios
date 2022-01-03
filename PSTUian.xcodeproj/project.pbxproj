@@ -40,6 +40,12 @@
 		EE6FB067274F1A1400ACC6E8 /* SliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB066274F1A1400ACC6E8 /* SliderTests.swift */; };
 		EE6FB071274F1A1400ACC6E8 /* PSTUianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB070274F1A1400ACC6E8 /* PSTUianUITests.swift */; };
 		EE6FB073274F1A1400ACC6E8 /* PSTUianUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6FB072274F1A1400ACC6E8 /* PSTUianUITestsLaunchTests.swift */; };
+		EE7560A72782F23F00D39354 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560A62782F23F00D39354 /* Converter.swift */; };
+		EE7560A92783041D00D39354 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560A82783041D00D39354 /* Params.swift */; };
+		EE7560AB2783088C00D39354 /* ConfigEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560AA2783088C00D39354 /* ConfigEntity.swift */; };
+		EE7560AD2783192300D39354 /* StudentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560AC2783192300D39354 /* StudentEntity.swift */; };
+		EE7560AF27831A8700D39354 /* TeacherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560AE27831A8700D39354 /* TeacherEntity.swift */; };
+		EE7560B12783399A00D39354 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560B02783399A00D39354 /* ProfileView.swift */; };
 		EE9F53C7277F1544007F2FDE /* BatchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53C6277F1544007F2FDE /* BatchEntity.swift */; };
 		EE9F53C9277F16D8007F2FDE /* BatchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53C8277F16D8007F2FDE /* BatchVM.swift */; };
 		EE9F53CB277F1736007F2FDE /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53CA277F1736007F2FDE /* BaseVM.swift */; };
@@ -57,6 +63,14 @@
 		EE9F53E8277F4521007F2FDE /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53E7277F4521007F2FDE /* InputView.swift */; };
 		EE9F53EA277F453D007F2FDE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53E9277F453D007F2FDE /* ButtonView.swift */; };
 		EE9F53EC277F457F007F2FDE /* DecoratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53EB277F457F007F2FDE /* DecoratorView.swift */; };
+		EE9F53EF27819B07007F2FDE /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53EE27819B07007F2FDE /* KeyChainHelper.swift */; };
+		EE9F53F12781A153007F2FDE /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53F02781A153007F2FDE /* AuthRepo.swift */; };
+		EE9F53F32781A603007F2FDE /* DeviceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53F22781A603007F2FDE /* DeviceEntity.swift */; };
+		EE9F53F62781AA95007F2FDE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53F52781AA95007F2FDE /* Device.swift */; };
+		EE9F53FA2781BD2A007F2FDE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53F92781BD2A007F2FDE /* SplashView.swift */; };
+		EE9F53FC2781CA9C007F2FDE /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53FB2781CA9C007F2FDE /* SplashVM.swift */; };
+		EE9F53FE2781CC1B007F2FDE /* DeviceRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53FD2781CC1B007F2FDE /* DeviceRepo.swift */; };
+		EE9F54002781DEE0007F2FDE /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53FF2781DEE0007F2FDE /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +127,12 @@
 		EE6FB06C274F1A1400ACC6E8 /* PSTUianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSTUianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6FB070274F1A1400ACC6E8 /* PSTUianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTUianUITests.swift; sourceTree = "<group>"; };
 		EE6FB072274F1A1400ACC6E8 /* PSTUianUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTUianUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE7560A62782F23F00D39354 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		EE7560A82783041D00D39354 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		EE7560AA2783088C00D39354 /* ConfigEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigEntity.swift; sourceTree = "<group>"; };
+		EE7560AC2783192300D39354 /* StudentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntity.swift; sourceTree = "<group>"; };
+		EE7560AE27831A8700D39354 /* TeacherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherEntity.swift; sourceTree = "<group>"; };
+		EE7560B02783399A00D39354 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EE9F53C6277F1544007F2FDE /* BatchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchEntity.swift; sourceTree = "<group>"; };
 		EE9F53C8277F16D8007F2FDE /* BatchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchVM.swift; sourceTree = "<group>"; };
 		EE9F53CA277F1736007F2FDE /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
@@ -130,6 +150,14 @@
 		EE9F53E7277F4521007F2FDE /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		EE9F53E9277F453D007F2FDE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		EE9F53EB277F457F007F2FDE /* DecoratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorView.swift; sourceTree = "<group>"; };
+		EE9F53EE27819B07007F2FDE /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
+		EE9F53F02781A153007F2FDE /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
+		EE9F53F22781A603007F2FDE /* DeviceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceEntity.swift; sourceTree = "<group>"; };
+		EE9F53F52781AA95007F2FDE /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		EE9F53F92781BD2A007F2FDE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		EE9F53FB2781CA9C007F2FDE /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
+		EE9F53FD2781CC1B007F2FDE /* DeviceRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRepo.swift; sourceTree = "<group>"; };
+		EE9F53FF2781DEE0007F2FDE /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +188,7 @@
 		EE3508BB277AD2DD00348877 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				EE9F53ED27819AE4007F2FDE /* db */,
 				EE9F53D1277F1C22007F2FDE /* repo */,
 				EE9F53D0277F1BEE007F2FDE /* entity */,
 				EE3508BE277AD2DD00348877 /* remote */,
@@ -180,6 +209,7 @@
 		EE3508C0277AD2DD00348877 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				EE9F53F72781BA41007F2FDE /* splash */,
 				EE9F53E2277F3F2D007F2FDE /* forgotpassword */,
 				EE9F53DF277F3A19007F2FDE /* emailverification */,
 				EE9F53DC277F3978007F2FDE /* signup */,
@@ -188,6 +218,7 @@
 				EE3508FB277B7C2400348877 /* signin */,
 				EE3508C1277AD2DD00348877 /* home */,
 				EE3508C4277AD2DD00348877 /* common */,
+				EE7560B02783399A00D39354 /* ProfileView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -213,6 +244,7 @@
 				EE9F53E7277F4521007F2FDE /* InputView.swift */,
 				EE9F53E9277F453D007F2FDE /* ButtonView.swift */,
 				EE9F53EB277F457F007F2FDE /* DecoratorView.swift */,
+				EE9F53FF2781DEE0007F2FDE /* Alerts.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -220,6 +252,7 @@
 		EE3508C7277AD2DE00348877 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				EE9F53F42781AA6A007F2FDE /* helper */,
 				EE3508C8277AD2DE00348877 /* extension */,
 				EE3508CA277AD2DE00348877 /* network */,
 				EE3508CC277AD2DE00348877 /* view */,
@@ -230,7 +263,9 @@
 		EE3508C8277AD2DE00348877 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				EE9F53F52781AA95007F2FDE /* Device.swift */,
 				EE3508C9277AD2DE00348877 /* Color.swift */,
+				EE7560A62782F23F00D39354 /* Converter.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -268,6 +303,7 @@
 				EE3508E4277B4D6B00348877 /* ApiServiceProtocol.swift */,
 				EE3508E6277B4DCD00348877 /* ApiService.swift */,
 				EE3508ED277B502400348877 /* ApiMockService.swift */,
+				EE7560A82783041D00D39354 /* Params.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -280,6 +316,7 @@
 				EE9F53C8277F16D8007F2FDE /* BatchVM.swift */,
 				EE9F53CA277F1736007F2FDE /* BaseVM.swift */,
 				EE9F53E5277F42A6007F2FDE /* AuthVM.swift */,
+				EE9F53FB2781CA9C007F2FDE /* SplashVM.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -385,6 +422,10 @@
 				EE9F53C6277F1544007F2FDE /* BatchEntity.swift */,
 				EE3508EA277B4E9E00348877 /* FacultyEntity.swift */,
 				EE3508BD277AD2DD00348877 /* SliderEntity.swift */,
+				EE9F53F22781A603007F2FDE /* DeviceEntity.swift */,
+				EE7560AA2783088C00D39354 /* ConfigEntity.swift */,
+				EE7560AC2783192300D39354 /* StudentEntity.swift */,
+				EE7560AE27831A8700D39354 /* TeacherEntity.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -396,6 +437,8 @@
 				EE9F53D4277F1E58007F2FDE /* FacultyRepo.swift */,
 				EE9F53D8277F2D0B007F2FDE /* BatchRepo.swift */,
 				EE9F53DA277F2EA1007F2FDE /* SliderRepo.swift */,
+				EE9F53F02781A153007F2FDE /* AuthRepo.swift */,
+				EE9F53FD2781CC1B007F2FDE /* DeviceRepo.swift */,
 			);
 			path = repo;
 			sourceTree = "<group>";
@@ -422,6 +465,29 @@
 				EE9F53E3277F3F3E007F2FDE /* ForgotPasswordView.swift */,
 			);
 			path = forgotpassword;
+			sourceTree = "<group>";
+		};
+		EE9F53ED27819AE4007F2FDE /* db */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F53EE27819B07007F2FDE /* KeyChainHelper.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		EE9F53F42781AA6A007F2FDE /* helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		EE9F53F72781BA41007F2FDE /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F53F92781BD2A007F2FDE /* SplashView.swift */,
+			);
+			path = splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -556,21 +622,30 @@
 			files = (
 				EE3508E5277B4D6B00348877 /* ApiServiceProtocol.swift in Sources */,
 				EE3508D3277AD2DE00348877 /* SliderVM.swift in Sources */,
+				EE7560A72782F23F00D39354 /* Converter.swift in Sources */,
 				EE9F53C7277F1544007F2FDE /* BatchEntity.swift in Sources */,
 				EE3508E7277B4DCD00348877 /* ApiService.swift in Sources */,
+				EE7560A92783041D00D39354 /* Params.swift in Sources */,
 				EE9F53D7277F20F6007F2FDE /* RepoError.swift in Sources */,
 				EE3508D1277AD2DE00348877 /* SliderEntity.swift in Sources */,
 				EE3508E1277AFAF000348877 /* SliderApiServiceProtocol.swift in Sources */,
 				EE3508D2277AD2DE00348877 /* Response.swift in Sources */,
 				EE3508F8277B6E2400348877 /* InformationCornerListView.swift in Sources */,
+				EE9F53FE2781CC1B007F2FDE /* DeviceRepo.swift in Sources */,
+				EE9F54002781DEE0007F2FDE /* Alerts.swift in Sources */,
 				EE3508D0277AD2DE00348877 /* Constant.swift in Sources */,
 				EE350900277B7C6300348877 /* NotificationView.swift in Sources */,
+				EE7560AF27831A8700D39354 /* TeacherEntity.swift in Sources */,
+				EE7560B12783399A00D39354 /* ProfileView.swift in Sources */,
 				EE3508D7277AD2DE00348877 /* Color.swift in Sources */,
+				EE9F53F12781A153007F2FDE /* AuthRepo.swift in Sources */,
 				EE9F53D9277F2D0B007F2FDE /* BatchRepo.swift in Sources */,
 				EE3508EE277B502400348877 /* ApiMockService.swift in Sources */,
 				EE9F53DE277F3984007F2FDE /* SignUpView.swift in Sources */,
 				EE3508DA277AD2DE00348877 /* ImageSliderView.swift in Sources */,
+				EE9F53FA2781BD2A007F2FDE /* SplashView.swift in Sources */,
 				EE3508FA277B6EB600348877 /* OptionsListView.swift in Sources */,
+				EE9F53FC2781CA9C007F2FDE /* SplashVM.swift in Sources */,
 				EE3508FD277B7C3600348877 /* SignInView.swift in Sources */,
 				EE3508F0277B54CE00348877 /* FacultyListView.swift in Sources */,
 				EE3508F2277B6D1000348877 /* SlidersView.swift in Sources */,
@@ -581,6 +656,8 @@
 				EE9F53EC277F457F007F2FDE /* DecoratorView.swift in Sources */,
 				EE3508DD277AD6B800348877 /* SliderApiService.swift in Sources */,
 				EE9F53C9277F16D8007F2FDE /* BatchVM.swift in Sources */,
+				EE7560AD2783192300D39354 /* StudentEntity.swift in Sources */,
+				EE9F53EF27819B07007F2FDE /* KeyChainHelper.swift in Sources */,
 				EE6FB056274F1A1300ACC6E8 /* PSTUianApp.swift in Sources */,
 				EE9F53DB277F2EA1007F2FDE /* SliderRepo.swift in Sources */,
 				EE9F53D5277F1E58007F2FDE /* FacultyRepo.swift in Sources */,
@@ -596,6 +673,9 @@
 				EE3508DF277AFAD800348877 /* SliderApiMockService.swift in Sources */,
 				EE3508F6277B6DFA00348877 /* SectionTitle.swift in Sources */,
 				EE3508EB277B4E9E00348877 /* FacultyEntity.swift in Sources */,
+				EE9F53F62781AA95007F2FDE /* Device.swift in Sources */,
+				EE9F53F32781A603007F2FDE /* DeviceEntity.swift in Sources */,
+				EE7560AB2783088C00D39354 /* ConfigEntity.swift in Sources */,
 				EE3508D5277AD2DE00348877 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,9 +842,9 @@
 				DEVELOPMENT_TEAM = 8WJFWCZXP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PSTUian/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -791,9 +871,9 @@
 				DEVELOPMENT_TEAM = 8WJFWCZXP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PSTUian/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

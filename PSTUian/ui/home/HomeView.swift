@@ -101,7 +101,6 @@ struct NotificationButton: View {
     var body: some View {
         NavigationLink(destination: NotificationView(), label: {
             Image(systemName: "bell.fill")
-                .foregroundColor(.black)
         })
     }
 }

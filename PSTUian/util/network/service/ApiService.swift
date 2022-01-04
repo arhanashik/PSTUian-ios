@@ -148,6 +148,8 @@ struct ApiService: ApiServiceProtocol {
     }
     
     private func processResponse<T: Codable>(_ type: T.Type, data: Data?, response: URLResponse?, error: Error?, completion: @escaping(Result<T, ApiError>) -> Void) {
+        print("response------>")
+        print(String(data: data ?? "none".data(using: .utf8)!, encoding: .utf8)!)
         if let error = error as? URLError {
             // URLError
             completion(Result.failure(ApiError.url(error)))
@@ -157,8 +159,6 @@ struct ApiService: ApiServiceProtocol {
         } else if let data = data {
             do {
                 let result = try JSONDecoder().decode(Response<T>.self, from: data)
-                print("response------>")
-                print(result)
                 if result.success {
                     // Success
                     completion(Result.success(result.data!))

@@ -11,6 +11,10 @@ class BatchVM: BaseVM<BatchEntity> {
     
     convenience init(repo: BatchRepo = BatchRepo()) {
         self.init(repo)
-        getAll(url: Api.Batch.GetAll)
+    }
+    
+    func getAllBatch(facultyId: Int) {
+        let url = "\(Api.Batch.GetAll)&faculty_id=\(facultyId)"
+        getAll(url: url)
     }
 }

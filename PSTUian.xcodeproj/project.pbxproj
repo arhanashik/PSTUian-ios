@@ -46,6 +46,8 @@
 		EE7560AD2783192300D39354 /* StudentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560AC2783192300D39354 /* StudentEntity.swift */; };
 		EE7560AF27831A8700D39354 /* TeacherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560AE27831A8700D39354 /* TeacherEntity.swift */; };
 		EE7560B12783399A00D39354 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560B02783399A00D39354 /* ProfileView.swift */; };
+		EE7560B32784165200D39354 /* BatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560B22784165200D39354 /* BatchListView.swift */; };
+		EE7560B5278417D300D39354 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7560B4278417D300D39354 /* StudentListView.swift */; };
 		EE9F53C7277F1544007F2FDE /* BatchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53C6277F1544007F2FDE /* BatchEntity.swift */; };
 		EE9F53C9277F16D8007F2FDE /* BatchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53C8277F16D8007F2FDE /* BatchVM.swift */; };
 		EE9F53CB277F1736007F2FDE /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F53CA277F1736007F2FDE /* BaseVM.swift */; };
@@ -133,6 +135,8 @@
 		EE7560AC2783192300D39354 /* StudentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntity.swift; sourceTree = "<group>"; };
 		EE7560AE27831A8700D39354 /* TeacherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherEntity.swift; sourceTree = "<group>"; };
 		EE7560B02783399A00D39354 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EE7560B22784165200D39354 /* BatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchListView.swift; sourceTree = "<group>"; };
+		EE7560B4278417D300D39354 /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 		EE9F53C6277F1544007F2FDE /* BatchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchEntity.swift; sourceTree = "<group>"; };
 		EE9F53C8277F16D8007F2FDE /* BatchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchVM.swift; sourceTree = "<group>"; };
 		EE9F53CA277F1736007F2FDE /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				EE350902277B7C9E00348877 /* FacultyView.swift */,
+				EE7560B22784165200D39354 /* BatchListView.swift */,
+				EE7560B4278417D300D39354 /* StudentListView.swift */,
 			);
 			path = faculty;
 			sourceTree = "<group>";
@@ -378,8 +384,8 @@
 		EE6FB054274F1A1200ACC6E8 /* PSTUian */ = {
 			isa = PBXGroup;
 			children = (
-				EE3508E2277B02D300348877 /* viewmodel */,
 				EE3508BB277AD2DD00348877 /* data */,
+				EE3508E2277B02D300348877 /* viewmodel */,
 				EE3508C0277AD2DD00348877 /* ui */,
 				EE3508C7277AD2DE00348877 /* util */,
 				EE6FB055274F1A1300ACC6E8 /* PSTUianApp.swift */,
@@ -630,7 +636,9 @@
 				EE3508D1277AD2DE00348877 /* SliderEntity.swift in Sources */,
 				EE3508E1277AFAF000348877 /* SliderApiServiceProtocol.swift in Sources */,
 				EE3508D2277AD2DE00348877 /* Response.swift in Sources */,
+				EE7560B5278417D300D39354 /* StudentListView.swift in Sources */,
 				EE3508F8277B6E2400348877 /* InformationCornerListView.swift in Sources */,
+				EE7560B32784165200D39354 /* BatchListView.swift in Sources */,
 				EE9F53FE2781CC1B007F2FDE /* DeviceRepo.swift in Sources */,
 				EE9F54002781DEE0007F2FDE /* Alerts.swift in Sources */,
 				EE3508D0277AD2DE00348877 /* Constant.swift in Sources */,
